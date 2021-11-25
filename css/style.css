@@ -2,20 +2,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-a{
-    color: #fff !important;
-}
-
 .button {
-    background-color: #cd3d0f;
     border: none;
     border-radius: 30px;
-    color: #fff;
-    padding: 15px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     cursor: pointer;
   }
@@ -47,6 +41,158 @@ a{
 .jumbo-announce p{
     font-size: 25px;
     margin-bottom: 40px;
-
 }
 
+.jumbo-announce .button{
+    background-color: #cd3d0f;
+    color: #fff;
+}
+
+.games img{
+    border-radius: 25px;
+}
+
+.games{
+    margin-bottom: 100px;
+}
+
+.play-5{
+    margin-bottom: 100px;
+}
+
+.play-5>div{
+    color: #0776cf;
+    font-weight: 600;
+}
+
+.play-5 h1{
+    color: #000;
+}
+
+.play-5 p{
+    color: #666;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.console-information .button{
+    background-color: #0776cf;
+    color: #fff;
+}
+
+.takes-two{
+    background: url("../img/it-takes-two-hero-banner-desktop.jpg") no-repeat center;
+    background-size: cover;
+    height: 90vh;
+
+    color: #fff;
+}
+
+.container-takes-two{
+
+    margin-bottom: 50px;
+}
+
+.takes-two-announce img{
+    width: 40%;
+    margin: 50px 0px;
+}
+
+.takes-two-announce h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.takes-two-announce p{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.takes-two-announce .button{
+    background-color: #cd3d0f;
+    color: #fff;
+}
+
+.new-games{
+    background-color: #1f1f1f;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.new-games div>div{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.new-games img{
+    border-radius: 20px;
+}
+
+.play-5 span{
+    font-size: 25px;
+    vertical-align: top;
+}
+
+.description{
+    color: #666;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.plus{
+    background-color: #aaa;
+    color: #fff;
+}
+
+.container-plus{
+    margin-top: 40px;
+}
+
+.plus-announce img{
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.plus-announce h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.plus-announce p{
+    font-size: 2vw;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.plus-announce .button{
+    background-color: #ccc;
+    color: #0776cf;
+}
+
+.banner{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+    .banner{
+        display: block;
+    }
+    
+}
