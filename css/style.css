@@ -1,0 +1,52 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    color: #fff !important;
+}
+
+.button {
+    background-color: #cd3d0f;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+.jumbotron{
+    background: url("../img/jumbo-bg.png") no-repeat center;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+    color: #fff;
+}
+
+.container-jumbo{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+}
+
+.jumbo-announce img{
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+.jumbo-announce h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.jumbo-announce p{
+    font-size: 25px;
+    margin-bottom: 40px;
+
+}
+
