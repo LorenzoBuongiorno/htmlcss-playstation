@@ -46,6 +46,7 @@
 .jumbo-announce .button{
     background-color: #cd3d0f;
     color: #fff;
+    margin-bottom: 100px;
 }
 
 .games img{
@@ -83,7 +84,7 @@
 .takes-two{
     background: url("../img/it-takes-two-hero-banner-desktop.jpg") no-repeat center;
     background-size: cover;
-    height: 90vh;
+    
 
     color: #fff;
 }
@@ -139,9 +140,14 @@
     font-weight: 600;
 }
 
+.product{
+    margin-bottom: 100px;
+}
+
 .plus{
     background-color: #aaa;
     color: #fff;
+    margin-bottom: 100px;
 }
 
 .container-plus{
@@ -169,8 +175,78 @@
     color: #0776cf;
 }
 
-.banner{
+.banner img{
     display: none;
+}
+
+.ps-now{
+    background-color: #161c3b;
+    margin-bottom: 100px;
+}
+
+.ps-now-content img{
+    width: 50%;
+}
+
+.ps-now-content p{
+    color: #fff;
+}
+
+.ps-now-content .button{
+    background-color: #fff;
+    color: #333;
+}
+
+.banner-ps-now{
+    display: none;
+}
+
+.social{
+    margin-bottom: 100px;
+}
+
+.social h1{
+    margin-bottom: 70px;
+}
+
+footer{
+    background-color: #00439c;
+    padding: 100px 50px;
+}
+
+.ps-logo-footer{
+    width: 100%;
+}
+
+.region img{
+    width: 20px;
+    margin-right: 5px;
+
+}
+
+.region span{
+    color: #fff;
+    vertical-align: middle;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 35px;
+}
+
+.site img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.site p{
+    color: #fff;
+    font-size: 15px;
+}
+
+.site p span{
+    text-decoration: underline;
 }
 
 
@@ -180,18 +256,14 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width:768px) {
-    .banner{
+
+    .banner img{
+        display: block;
+        max-width: 60vw;
+    }
+
+    .banner-ps-now{
         display: block;
     }
     
