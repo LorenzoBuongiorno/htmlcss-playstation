@@ -12,7 +12,46 @@
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
+    outline: 2px solid rgba(0, 0, 0, 0) !important;
+    outline-offset: 2px !important;
+    transition: outline 0.5s;
   }
+
+
+
+
+
+/* ---------------------------------- */
+
+.sony-bar{
+    width: 100%;
+    background-color: #000;
+}
+
+.sony-bar img{
+    width: 100px;
+    margin: 5px;
+}
+
+.navbar a{
+    color: #000 !important;
+}
+
+.play-logo{
+    filter: invert(27%) sepia(40%) saturate(6270%) hue-rotate(194deg) brightness(94%) contrast(100%);
+    margin-right: 15px;
+}
+
+.navbar .button{
+    background-color: #555;
+    color: #fff !important;
+    padding: 15px 20px;
+}
+
+.search{
+    margin-left: 15px;
+    filter: invert(0%) sepia(86%) saturate(7467%) hue-rotate(70deg) brightness(108%) contrast(99%);
+}
 
 .jumbotron{
     background: url("../img/jumbo-bg.png") no-repeat center;
@@ -20,6 +59,7 @@
     height: 90vh;
     position: relative;
     color: #fff;
+    margin-top: 50px;
 }
 
 .container-jumbo{
@@ -29,32 +69,47 @@
 }
 
 .jumbo-announce img{
-    width: 60%;
-    margin-bottom: 50px;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 .jumbo-announce h1{
     font-size: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .jumbo-announce p{
-    font-size: 25px;
-    margin-bottom: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
 .jumbo-announce .button{
     background-color: #cd3d0f;
     color: #fff;
-    margin-bottom: 100px;
 }
 
-.games img{
+.jumbo-announce .button:hover{
+    outline: 2px solid #cd3d0f !important;
+    transition: outline 0.5s;
+}
+
+
+.card-game img{
     border-radius: 25px;
+    position: relative;
+    bottom: 0;
+    transition: all 0.3s;
 }
 
 .games{
     margin-bottom: 100px;
+}
+
+.card-game:hover img{
+    position: relative;
+    bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
 .play-5{
@@ -76,9 +131,30 @@
     font-weight: 600;
 }
 
+.selected{
+    border-bottom: 4px solid #00439c;
+}
+
+.device{
+    opacity: 50%;
+    transition: opacity 0.5s;
+}
+
+.device:hover{
+    opacity: 100%;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+
 .console-information .button{
     background-color: #0776cf;
     color: #fff;
+}
+
+.console-information .button:hover{
+    outline: 2px solid #0776cf !important;
+    transition: outline 0.5s;
 }
 
 .takes-two{
@@ -112,6 +188,11 @@
 .takes-two-announce .button{
     background-color: #cd3d0f;
     color: #fff;
+}
+
+.takes-two-announce .button:hover{
+    outline: 2px solid #cd3d0f !important;
+    transition: outline 0.5s;
 }
 
 .new-games{
@@ -173,6 +254,12 @@
 .plus-announce .button{
     background-color: #ccc;
     color: #0776cf;
+    margin-bottom: 20px;
+}
+
+.plus-announce .button:hover{
+    outline: 2px solid #ccc !important;
+    transition: outline 0.5s;
 }
 
 .banner img{
@@ -197,6 +284,11 @@
     color: #333;
 }
 
+.ps-now-content .button:hover{
+    outline: 2px solid #fff !important;
+    transition: outline 0.5s;
+}
+
 .banner-ps-now{
     display: none;
 }
@@ -216,6 +308,7 @@ footer{
 
 .ps-logo-footer{
     width: 100%;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(175deg) brightness(104%) contrast(102%);
 }
 
 .region img{
@@ -256,11 +349,17 @@ footer a{
 
 
 
+
+
+
+
+
+
 @media screen and (min-width:768px) {
 
     .banner img{
         display: block;
-        max-width: 60vw;
+        max-width: 65vw;
     }
 
     .banner-ps-now{
