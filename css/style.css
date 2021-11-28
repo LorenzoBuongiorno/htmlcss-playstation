@@ -17,7 +17,9 @@
     transition: outline 0.5s;
   }
 
-
+  a:hover{
+      color: #fff !important;
+  }
 
 
 
@@ -36,6 +38,9 @@
 .navbar a{
     color: #000 !important;
 }
+.navbar a:hover{
+    color: #0776cf !important;
+}
 
 .play-logo{
     filter: invert(27%) sepia(40%) saturate(6270%) hue-rotate(194deg) brightness(94%) contrast(100%);
@@ -46,6 +51,26 @@
     background-color: #555;
     color: #fff !important;
     padding: 15px 20px;
+    transition: background-color 0.5s;
+}
+
+.navbar .button:hover{
+    background-color: #888;
+    color: #fff !important;
+    transition: background-color 0.5s;
+}
+
+.sublink a{
+    font-weight: 600;
+}
+
+.sublink a::before{
+    content: '\2022  ';
+    color: #0776cf;
+    display: inline-block;
+    font-size: 30px;
+    vertical-align:auto;
+    margin-right: 5px;
 }
 
 .search{
@@ -59,7 +84,7 @@
     height: 90vh;
     position: relative;
     color: #fff;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 
 .container-jumbo{
@@ -99,6 +124,11 @@
     position: relative;
     bottom: 0;
     transition: all 0.3s;
+}
+
+.active{
+    outline: 3px solid #0776cf !important;
+    outline-offset: 3px !important;
 }
 
 .games{
@@ -286,6 +316,7 @@
 
 .ps-now-content .button:hover{
     outline: 2px solid #fff !important;
+    color: #333 !important;
     transition: outline 0.5s;
 }
 
