@@ -3,7 +3,6 @@
 }
 
 .button {
-    border: none;
     border-radius: 30px;
     padding: 10px 20px;
     text-align: center;
@@ -14,7 +13,8 @@
     cursor: pointer;
     outline: 2px solid rgba(0, 0, 0, 0) !important;
     outline-offset: 2px !important;
-    transition: outline 0.5s;
+    transition: box-shadow 0.5s;
+    border-width: 2px;
   }
 
   a:hover{
@@ -25,6 +25,8 @@
 
 /* ---------------------------------- */
 
+
+/* NAVBAR */
 .sony-bar{
     width: 100%;
     background-color: #000;
@@ -60,10 +62,6 @@
     transition: background-color 0.5s;
 }
 
-.sublink a{
-    font-weight: 600;
-}
-
 .sublink a::before{
     content: '\2022  ';
     color: #0776cf;
@@ -78,48 +76,36 @@
     filter: invert(0%) sepia(86%) saturate(7467%) hue-rotate(70deg) brightness(108%) contrast(99%);
 }
 
+/* JUMBOTRON */
 .jumbotron{
     background: url("../img/jumbo-bg.png") no-repeat center;
     background-size: cover;
     height: 90vh;
-    position: relative;
     color: #fff;
     margin-top: 90px;
 }
 
-.container-jumbo{
-    position: absolute;
-    bottom: 0;
-    left: 0px;
-    margin-bottom: 50px;
-}
-
-.jumbo-announce img{
-    width: 100%;
-    margin-bottom: 40px;
-}
-
-.jumbo-announce h1{
+.jumbo-content h1,.takes-two-content h1,.plus-content h1{
     font-size: 50px;
     margin-bottom: 40px;
 }
 
-.jumbo-announce p{
+.jumbo-content p{
     font-size: 20px;
     margin-bottom: 30px;
 }
 
-.jumbo-announce .button{
+.jumbo-content .button{
     background-color: #cd3d0f;
+    border: 2px solid #cd3d0f;
     color: #fff;
 }
 
-.jumbo-announce .button:hover{
-    outline: 2px solid #cd3d0f !important;
-    transition: outline 0.5s;
+.jumbo-content .button:hover{
+    box-shadow: inset 0px 0px 0px 2px #000;
 }
 
-
+/* GAMES CARD */
 .card-game img{
     border-radius: 25px;
     position: relative;
@@ -132,7 +118,7 @@
     outline-offset: 3px !important;
 }
 
-.games{
+.game-cards-array{
     margin-bottom: 100px;
 }
 
@@ -143,6 +129,7 @@
     transition: all 0.3s;
 }
 
+/* PLAY HAS NO LIMITS */
 .play-5{
     margin-bottom: 100px;
 }
@@ -162,6 +149,18 @@
     font-weight: 600;
 }
 
+/* PLAYSTATION 5 INFO */
+.device-information .button{
+    background-color: #0776cf;
+    border: 2px solid #0776cf;
+    color: #fff;
+}
+
+.device-information .button:hover{
+    box-shadow: inset 0px 0px 0px 2px #fff;
+}
+
+/* DEVICES */
 .selected{
     border-bottom: 4px solid #00439c;
 }
@@ -177,55 +176,34 @@
     cursor: pointer;
 }
 
-
-.console-information .button{
-    background-color: #0776cf;
-    color: #fff;
-}
-
-.console-information .button:hover{
-    outline: 2px solid #0776cf !important;
-    transition: outline 0.5s;
-}
-
+/* IT TAKES TWO */
 .takes-two{
     background: url("../img/it-takes-two-hero-banner-desktop.jpg") no-repeat center;
     background-size: cover;
-    
-
     color: #fff;
 }
 
-.container-takes-two{
-
-    margin-bottom: 50px;
-}
-
-.takes-two-announce img{
+.takes-two-content img{
     width: 40%;
     margin: 50px 0px;
 }
 
-.takes-two-announce h1{
-    font-size: 50px;
-    margin-bottom: 50px;
-}
-
-.takes-two-announce p{
+.takes-two-content p{
     font-size: 25px;
     margin-bottom: 40px;
 }
 
-.takes-two-announce .button{
+.takes-two-content .button{
     background-color: #cd3d0f;
+    border: 2px solid #cd3d0f;
     color: #fff;
 }
 
-.takes-two-announce .button:hover{
-    outline: 2px solid #cd3d0f !important;
-    transition: outline 0.5s;
+.takes-two-content .button:hover{
+    box-shadow: inset 0px 0px 0px 2px #000;
 }
 
+/* NEW GAMES */
 .new-games{
     background-color: #1f1f1f;
     color: #fff;
@@ -241,6 +219,7 @@
     border-radius: 20px;
 }
 
+/* EXPLORE PS4 */
 .play-5 span{
     font-size: 25px;
     vertical-align: top;
@@ -252,51 +231,46 @@
     font-weight: 600;
 }
 
+/* PRODUCTS */
 .product{
     margin-bottom: 100px;
 }
 
+/* PLAYSTATION PLUS */
 .plus{
     background-color: #aaa;
     color: #fff;
     margin-bottom: 100px;
 }
 
-.container-plus{
-    margin-top: 40px;
-}
-
-.plus-announce img{
+.plus-content img{
     width: 70%;
     margin-bottom: 30px;
 }
 
-.plus-announce h1{
-    font-size: 50px;
-    margin-bottom: 50px;
-}
-
-.plus-announce p{
+.plus-content p{
     font-size: 16px;
     margin-bottom: 40px;
     color: #000;
 }
 
-.plus-announce .button{
+.plus-content .button{
     background-color: #ccc;
     color: #0776cf;
+    border: 2px solid #ccc;
     margin-bottom: 20px;
 }
 
-.plus-announce .button:hover{
-    outline: 2px solid #ccc !important;
-    transition: outline 0.5s;
+.plus-content .button:hover{
+    color: #0776cf !important;
+    box-shadow: inset 0px 0px 0px 2px #aaa;
 }
 
-.banner img{
+.plus-banner img{
     display: none;
 }
 
+/* PLAYSTATION NOW */
 .ps-now{
     background-color: #161c3b;
     margin-bottom: 100px;
@@ -312,19 +286,20 @@
 
 .ps-now-content .button{
     background-color: #fff;
+    border: 2px solid #fff;
     color: #333;
 }
 
 .ps-now-content .button:hover{
-    outline: 2px solid #fff !important;
     color: #333 !important;
-    transition: outline 0.5s;
+    box-shadow: inset 0px 0px 0px 2px #161c3b;
 }
 
 .banner-ps-now{
     display: none;
 }
 
+/* SOCIAL */
 .social{
     margin-bottom: 100px;
 }
@@ -333,6 +308,7 @@
     margin-bottom: 70px;
 }
 
+/* FOOTER */
 footer{
     background-color: #00439c;
     padding: 100px 50px;
@@ -360,42 +336,32 @@ footer a{
     line-height: 35px;
 }
 
-.site img{
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.site p{
+.copyright p{
     color: #fff;
     font-size: 15px;
 }
 
-.site p span{
-    text-decoration: underline;
-}
 
-
-
-
-
-
-
-
-
-
-
-
+/* MEDIAQUERY */
 
 
 @media screen and (min-width:768px) {
 
-    .banner img{
+    .plus-banner img{
         display: block;
         max-width: 65vw;
     }
 
     .banner-ps-now{
         display: block;
+    }
+
+    .container-jumbo{
+        margin-left: 50px;
+    }
+
+    .container-jumbo{
+        margin-bottom: 100px;
     }
     
 }
